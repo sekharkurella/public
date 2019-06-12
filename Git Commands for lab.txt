@@ -1,0 +1,28 @@
+Global Configuration:
+
+git config --global user.name "Name"
+git config --global user.email "emailid"
+
+git config --list
+
+Initialize git : 
+
+git init - Creates .git repository under your users folder
+
+git clone https://github.com/username/repository name
+
+Check if repository has been downloaded - Mostly it would have been 
+got created in the same location where you have git initialized
+
+Add files:
+git add filename
+
+Commiting file:
+git commit -m "filename"
+
+Pushing to remote repository :
+
+git remote add origin https://github.com/username/repository
+
+git push origin master
+

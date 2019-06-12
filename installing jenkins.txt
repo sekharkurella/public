@@ -1,0 +1,21 @@
+
+centos 7
+# yum install docker
+
+systemctl start docker
+
+docker pull jenkins/jenkins:lts
+
+docker run -d -p 8080:8080 -v jenkins_home:/var/jenkins_home --name jenkins jenkins/jenkins:lts
+
+systemctl start jenkins
+
+Password:
+
+docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+
+
+
+
+
+
